@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.AlertDialogTheme);
-                View view1 = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_exit, (ConstraintLayout) findViewById(R.id.layoutExit));
+                View view1 = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_logout, (ConstraintLayout) findViewById(R.id.layoutExit));
                 builder.setView(view1);
 
                 final AlertDialog alertDialog= builder.create();
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.AlertDialogTheme);
-        View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_logout, (ConstraintLayout) findViewById(R.id.layoutExit));
+        View view = LayoutInflater.from(MainActivity.this).inflate(R.layout.custom_exit, (ConstraintLayout) findViewById(R.id.layoutExit));
         builder.setView(view);
 
         final AlertDialog alertDialog= builder.create();
